@@ -1,0 +1,268 @@
+body{
+    background-color: grey;
+}
+#wrapper{
+    margin: auto;
+background: url(../../img/kap2.jpg);
+height: 1541px;
+width: 1503px;
+border: white 2px solid;
+ 
+
+#header{
+    
+    
+    background-color: black;
+    height: 80px;
+    color:white;
+    text-align: center;
+    margin-bottom: 100px;
+    
+
+    border-top:2px solid white ;
+    border-bottom: 2px solid white ;
+ }
+
+.subtitle{
+    margin: 0 0 0 650px;
+text-align: center;
+padding: 3px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border-top: 2px white solid;
+    border-left: 2px white solid;
+    border-right: 2px white solid;
+    .subtitle_text{
+        margin:0 0 1px 0 ;
+        font-size: 21px;
+        color: white;
+    }
+}
+
+.content1{
+    height: 220px;
+    color: white;
+    background-color: black;
+    border-top:2px solid white ;
+    
+    padding:1px;
+    border-bottom: 2px solid white ;
+    .left{
+        width: 290px;
+height: 220px;
+float: left;
+margin: 1px;
+border-right: white 1px solid;
+    }
+    .right{
+        width: 290px;
+        height: 220px;
+        float: right;
+        border-left: white 1px solid;
+    }
+    .content1_text{
+        .first-letter{
+            color: red;
+        }
+        margin: 3px 3px 0px 0px;
+        color: white;
+        font-size: 20px;
+    }
+}
+.content2{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .content2_text1{
+        border: white 2px solid;
+        border-radius: 30px;
+        overflow: hidden;
+        background-color: black;
+width: 300px;
+height: 250px;
+.content2_text1_text{
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    margin: 0 0 10px 0;
+}
+.content2_text1_img{
+    width: 300px;
+    height: 220px;
+    border-bottom: 1px white solid;
+}
+    }
+    .content2_text2{
+        border-left: white 2px solid;
+        border-right: white 2px solid;
+        background-color: black;
+        width: 500px;
+height: 400px;
+
+.content2_text2_text{
+    color: white;
+    font-size: 20px;
+    margin: 3px 3px 0px 0px;
+}
+
+
+    }
+    .content2_text3{
+        border: white 2px solid;
+        background-color: black;
+        width: 300px;
+        height: 250px; 
+        border-radius: 30px;
+        overflow: hidden;
+        .content2_text3_text{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin: 0 0 10px 0;
+        }
+        .content2_text3_img{
+            width: 300px;
+            height: 220px;
+            border-bottom: 1px white solid;
+        }
+
+
+
+
+    }
+}
+  
+
+
+  
+.content3{
+    height: 230px;
+    background-color: black;
+    border-top: 2px white solid;
+    border-bottom: white 2px solid;
+    
+    padding:1px;
+    border-bottom: 2px solid white ;
+    .left2{
+        width: 290px;
+height: 230px;
+float: left;
+margin: 1px;
+border-right: white 1px solid;
+    }
+    .right2{
+        width: 290px;
+        height: 230px;
+        float: right;
+        border-left: white 1px solid;
+    }
+.content3_text1{
+    color: white;
+    font-size: 21px;
+    margin: 3px 3px 0px 0px;
+}
+
+    
+}
+
+.content4{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .content4_text1{
+        border: white 2px solid;
+        background-color: black;
+width: 300px;
+height: 250px;
+border-radius: 30px;
+        overflow: hidden;
+.content4_text1_text{
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    margin: 0 0 10px 0;
+}
+.content4_text1_img{
+    width: 300px;
+    height: 220px;
+    border-bottom:white 1px  solid;
+    
+}
+    }
+    .content4_text2{
+        border-left: white 2px solid;
+        border-right: white 2px solid;
+        background-color: black;
+        width: 500px;
+height: 400px;
+
+.content4_text2_text{
+    color: white;
+    font-size: 21px;
+    margin: 3px 3px 0px 0px;
+}
+
+
+    }
+    .content4_text3{
+        border: white 2px solid;
+        background-color: black;
+        width: 300px;
+        height: 250px; 
+        border-radius: 30px;
+        overflow: hidden;
+        .content4_text3_text{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin: 0 0 10px 0;
+        }
+        .content4_text3_img{
+            width: 300px;
+            height: 220px;
+            border-bottom: 1px white solid;
+        }
+
+
+
+
+    }
+}
+.clear{
+    clear: both;
+}
+ #footer{
+    padding: 3px;
+    margin: 0px 0 10px 0;
+height: 50px;
+background-color: black;
+margin-bottom: 10px;
+border-top: 2px white solid ;
+
+.zax{
+    text-decoration: double;
+    float: right;
+    color: rgb(161, 153, 153);
+}
+.dax:hover{
+    text-decoration: underline;
+    color: rgb(179, 39, 39);
+}
+.zax:hover{
+    text-decoration: underline;
+    color: rgb(179, 39, 39);
+}
+.dax{
+    text-decoration:dashed;
+    float: left;
+    color:rgb(161, 153, 153) ;
+}
+
+}
+
+
+}

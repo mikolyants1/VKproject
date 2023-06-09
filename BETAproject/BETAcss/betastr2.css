@@ -1,0 +1,215 @@
+body{
+
+    background-color: gray;
+}
+#wrapper{
+    margin: auto;
+    height: 1703px;
+    width: 1500px;
+    background:url(../../img/kap2.jpg);
+    border: white 2px solid;
+}
+h1{
+    margin: 0 0 0 650px;
+    color: white;
+    font-family:'Times New Roman'
+}
+#header{
+    background-color: black;
+    height: 100px;
+    margin-bottom: 49px;
+}
+.one{
+    margin: 0 0 0 70px;
+    
+}
+.block1{
+    height:470px ;
+    width: 510px;
+    background-color:black ;
+    margin: 0 0 0 500px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: white;
+    padding: 10px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+}
+.two{
+    color: white;
+    font-size: 20px;
+    margin: 0 0 0 220px;
+}
+.a{
+    height: 200px;
+    width: 200px;
+    margin: 0 0 0 150px;
+    border-radius: 50px;
+    border: 1px white solid;
+
+}
+.three{
+    color: white;
+}
+.block2{
+
+    height:375px ;
+    width: 390px;
+    background-color:black ;
+    float: left;
+    border-radius: 30px;
+    border: 1px solid;
+    border-color: white;
+    padding: 10px;
+
+}
+.block3{
+    height:375px ;
+    width: 390px;
+    background-color:black ;
+    float: right;
+    border-radius: 30px;
+    border: 1px solid;
+    border-color: white;
+    padding: 10px;
+
+}
+.block4{
+
+    height:375px ;
+    width: 390px;
+    background-color:black ;
+    margin: 0 0 0 530px;
+    border-radius: 30px;
+    border: 1px solid;
+    border-color: white;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.b{
+    height: 175px;
+    width: 200px;
+    margin: 0 0 0 90px;
+    border-radius: 50px;
+    border: 1px white solid;
+}
+.c{
+    height: 175px;
+    width: 200px;
+    margin: 0 0 0 90px;
+    border-radius: 50px;
+    border: 1px white solid;
+}
+.d{
+    height: 175px;
+    width: 200px;
+    margin: 0 0 0 90px;
+    border-radius: 50px;
+    border: 1px white solid;
+}
+.four{
+   color: white;
+    font-size: 20px;
+    margin: 0 0 0 160px; 
+}
+.five{
+    color: white;
+     font-size: 20px;
+     margin: 0 0 0 140px; 
+ }
+ .six{
+    color: white;
+     font-size: 20px;
+     margin: 0 0 0 160px; 
+ }
+ .seven{
+    color: white;
+ }
+ .eight{
+    color: white;
+ }
+ .nine{
+    color: white;
+ }
+ #content1{
+    
+    float: right;
+    height: 400px;
+    background-color: black;
+    width: 700px;
+    border-radius: 10px;
+    box-shadow: white 0 0 0 2px;
+    padding: 5px;
+ }
+ #content2{
+    
+    float: left;
+    height: 400px;
+    background-color: black;
+    width: 730px;
+    border-radius: 10px;
+    box-shadow: white 0 0 0 2px;
+    margin-bottom: 50px;
+    padding: 5px;
+ }
+ .clear{
+    clear: both;
+ }
+ #footer{
+    padding: 3px;
+    margin: 0px 0 10px 0;
+height: 50px;
+background-color: black;
+margin-bottom: 10px;
+box-shadow: white 0 0 5px 0;
+ }
+ h2{
+    margin: 0 0 0 300px;
+    color: white;
+ }
+.ten{
+    font-size: 18px;
+    color: white;
+}
+.e{
+    margin:0px 0 20px 0;
+    float: right;
+    height:230px ;
+    width: 320px;
+    border-radius: 30px;
+    
+    
+}
+.eleven{
+    font-size: 18px;
+    margin:  10px  10px;
+    color: white;
+}
+.zax{
+    text-decoration: double;
+    float: right;
+    color: rgb(161, 153, 153);
+}
+.dax:hover{
+    text-decoration: underline;
+    color: rgb(179, 39, 39);
+}
+.zax:hover{
+    text-decoration: underline;
+    color: rgb(179, 39, 39);
+}
+.dax{
+    text-decoration: double;
+    float: left;
+    color:rgb(161, 153, 153) ;
+}
+.f{
+    margin:0 0 20px 0;
+    float: left;
+    height:230px ;
+    width: 320px;
+    padding: 4px 4px;
+    border-radius: 30px;
+    
+
+}

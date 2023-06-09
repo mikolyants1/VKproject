@@ -1,0 +1,145 @@
+body{
+    background-color: gray;
+}
+#wrapper{
+    width: 1520px;
+    height: 2494px;
+    background:url("../../img/kap2.jpg");
+    margin: auto;
+    border: 2px white solid;
+}
+#header{
+    
+  position: relative;
+    height: 258px;
+    
+    margin-bottom: 90px;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow:white 1px 2px 3px 1px;
+
+}
+.a{
+    font-size: 18px;
+}
+.ert{
+    font-size: 18px;
+}
+.dew{
+    font-size: 18px;
+}
+ul{
+    color: white;
+}
+li{
+    color: white;
+}
+h1{
+    color: white;
+    margin: 0 30px 0 500px;
+}
+
+#sidebar{
+float: right;
+border-radius: 10px;
+background-color:black;
+margin-bottom: 100px;
+height: 1870px;
+width: 700;
+padding: 50px;
+box-shadow:  white 1px 1px 2px 2px;
+
+
+}
+h2{
+    color: white;
+}
+p{
+    font-size: 17px;
+    color: white ;
+}
+#content{
+    background-color: black;
+    width: 600px;
+border-radius: 10px;
+    float: left;
+    height: 1825px;
+    padding: 80px;
+    box-shadow: white  1px 1px 3px 2px;
+    margin-bottom: 40px;
+}
+.zaq{
+    font-size: 18px;
+}
+.head{
+height: 210px;
+width: 430px;
+margin: 10px 40px 30px 500px;
+
+}
+.marker{
+    float: left;
+    margin: 5px 5px 0 0; 
+    height: 160px;
+    width: 240px;
+    font-size: 18px;
+}
+
+.left{
+    margin: 20px 34px 150px 6px;
+    float: left;
+    height: 220px;
+    width: 300px;
+    
+}
+.right{
+    margin: 0 0 0 10px;
+ float: right;
+ height: 220px;
+width: 270px;
+}
+.left2{
+    margin: 5px 5px 0 0 ;
+    float: left;
+    height: 200px;
+    width: 280px;
+}
+.right2{
+    margin: 0 0 0 10px;
+    float: right;
+    height: 200px;
+    width: 310px;
+}
+.left3{
+    margin: 5px 5px 0 0 ;
+    float:left;
+    height: 200px;
+    width: 280px;
+}
+.clear{
+    clear: both;
+}
+#footer{
+margin: 0px 0 10px 0;
+height: 60px;
+background-color: black;
+margin-bottom: 10px;
+box-shadow: white 0 0 5px 0;
+}
+
+
+.zax:hover{
+    text-decoration:underline;
+    color: rgb(179, 39, 39);
+}
+.zax{
+    text-decoration: double;
+    margin: 10px 0 0 1400px;
+    color: rgb(161, 153, 153);
+}
+.fat{
+    font-size: 18px;
+}
+.qwert{
+    font-size: 18px;
+}

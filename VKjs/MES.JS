@@ -13,8 +13,8 @@ let x1=x.getHours()
 let x2=x.getMinutes()
 if (input.value) {
 f.style.display='block'
-c.style.cssText=`width: 90%;height: 34px;margin-left: 10px;`
-a.style.cssText=` width: 160px;height: 25px;border: 1px solid rgb(0, 0, 0);
+c.style.cssText=`width: 90%;margin-left: 10px;`
+a.style.cssText=` width: 160px;border: 1px solid rgb(0, 0, 0);
 margin-bottom: 10px;margin-top: 10px;rotate: 180deg;
 padding: 3px 3px; display: flex;border-radius: 15px;
 background-color: rgb(172, 222, 255);justify-content: space-between; `
@@ -36,7 +36,6 @@ else{
 x4=`0${x2}`
 }
 b.innerHTML=`${x3}:${x4}` 
-
 let val=input.value
 let val1=val.split('')
 if (val1.length>10&&val1.length<=15) {
@@ -46,20 +45,15 @@ if (val1.length>15&&val1.length<=20) {
 a.style.width='270px'
 }
 if (val1.length>20&&val1.length<=25) {
-
 a.style.width='300px'
 }
 if (val1.length>25) {
 a.style.width='330px'
-
-
 }
 a.append(q)
 a.append(b)
 c.append(a)
 text.prepend(c)
 }
-
-
 input.value=''
 }

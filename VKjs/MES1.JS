@@ -122,8 +122,8 @@ var date0=new Date().getDate()
     cell_time.style.cssText=`color: grey;
     font-size: 13px;margin-top:3px`
     cell_now.style.cssText=`width: 100%;text-align: center;rotate:180deg`
-    cell_c.style.cssText=`width: 90%; height: 34px; margin-left: 10px;`
-    cell_a.style.cssText=`width: 170px;  height: 25px; border: 1px solid rgb(0, 0, 0); margin-bottom: 10px;margin-top: 10px;
+    cell_c.style.cssText=`width: 90%; margin-left: 10px;`
+    cell_a.style.cssText=`width: 170px;  border: 1px solid rgb(0, 0, 0); margin-bottom: 10px;margin-top: 10px;
     rotate: 180deg; padding: 3px 3px; display: flex; border-radius: 15px;background-color: rgb(172, 222, 255);
     justify-content: space-between;`
 if (cell_name.innerText.length>10&&cell_name.innerText.length<=15) {

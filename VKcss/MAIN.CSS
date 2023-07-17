@@ -371,7 +371,7 @@ right: 0px;
 bottom: 0px;
 display: none;
 background: white;
-grid-template-columns: 1fr/1fr/1fr/1fr/1fr;
+grid-template-columns: 1fr/1fr/1fr/1fr;
 }
 .a1{
 display: flex;

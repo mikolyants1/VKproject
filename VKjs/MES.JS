@@ -18,7 +18,7 @@ a.style.cssText=` width: 160px;border: 1px solid rgb(0, 0, 0);
 margin-bottom: 10px;margin-top: 10px;rotate: 180deg;
 padding: 3px 3px; display: flex;border-radius: 15px;
 background-color: rgb(172, 222, 255);justify-content: space-between; `
-b.style.cssText=`color: grey;font-size: 13px;margin-top:3px`
+b.style.cssText=`color: grey;font-size: 13px;margin-top:3px;align-self:end`
 q.style.cssText=` width: 100%;`
 q.innerHTML=`${input.value}`
 let x3

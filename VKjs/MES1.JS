@@ -120,7 +120,7 @@ var date0=new Date().getDate()
     cell_time.innerText=work.time
     cell_now.innerText=`${date0} ${date1}`
     cell_time.style.cssText=`color: grey;
-    font-size: 13px;margin-top:3px`
+    font-size: 13px;margin-top:3px;align-self:end`
     cell_now.style.cssText=`width: 100%;text-align: center;rotate:180deg`
     cell_c.style.cssText=`width: 90%; margin-left: 10px;`
     cell_a.style.cssText=`width: 170px;  border: 1px solid rgb(0, 0, 0); margin-bottom: 10px;margin-top: 10px;

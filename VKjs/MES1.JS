@@ -1,4 +1,62 @@
-
+const sidebar=document.querySelector('.sidebar')
+const side=[
+  {ref:'../VKproject/MAIN.HTML',text:'Моя Страница'},
+  {ref:'../VKproject/NEWS.HTML',text:'Новости'},
+  {ref:'../VKproject/MES0.HTML',text:'Мессенджер'},
+  {ref:'',text:'Звонки'},
+  {ref:'../VKproject/FRIEND.HTML',text:'Друзья'},
+  {ref:'',text:'Сообщества'},
+  {ref:'',text:'Фотографии'},
+  {ref:'',text:'Музыка'},
+  {ref:'',text:'Видео'},
+  {ref:'',text:'Клипы'},
+  {ref:'',text:'Игры'},
+  {ref:'',text:'Стикеры'},
+  {ref:'',text:'Маркет'},
+]
+side.reverse().forEach(({ref,text})=>{
+  const div=document.createElement('div')
+  const link=document.createElement('a')
+  div.classList.add('sb1')
+  link.classList.add('sb01')
+  link.href=ref
+  link.innerHTML=text
+  div.append(link)
+  sidebar.prepend(div)
+})
+const blog1=['Блог','Разработчикам']
+const blog2=['Для бизнеса','Еще']
+const rend=(arr)=>{
+  const div=document.createElement('div')
+  div.classList.add('blog')
+  arr.forEach(item=>{
+    const div1=document.createElement('div')
+    const link=document.createElement('a')
+    link.classList.add('bl1')
+    link.innerHTML=item
+    div1.append(link)
+    div.append(div1)
+    sidebar.append(div)
+  })
+}
+rend(blog1)
+rend(blog2)
+const Search=document.getElementById('search')
+const serDiv1=document.createElement('div')
+const serDiv2=document.createElement('div')
+const serImg=document.createElement('img')
+const serInput=document.createElement('input')
+serDiv1.style.cssText="display: flex;width: 70%;margin: auto;"
+serDiv2.style.cssText="height: 40px;width: 40px;"
+serInput.classList.add('input')
+serImg.classList.add('but')
+serInput.placeholder='напишите сообщение'
+serInput.type='text'
+serImg.src='img/cli1.png'
+serDiv2.append(serImg)
+serDiv1.append(serInput)
+serDiv1.append(serDiv2)
+Search.append(serDiv1)
 function DataBase9(name) {
     this.dbName= name
     this.ucdbName='websql8'
@@ -11,10 +69,10 @@ var fields={
   time:'TEXT',
 }
 for (const key in fields) {
-    str+=`,${key} ${fields[key]}`
+str+=`,${key} ${fields[key]}`
 }
 this.db.transaction(function (tx) {
-    tx.executeSql(`create table if not exists ${name} (id integer primary key autoincrement ${str})`)
+tx.executeSql(`create table if not exists ${name} (id integer primary key autoincrement ${str})`)
 })
 }
 DataBase9.prototype.add=function(name){

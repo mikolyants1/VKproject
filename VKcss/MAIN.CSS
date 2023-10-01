@@ -17,8 +17,7 @@ display: none;
 .c1{
 display: flex;
 }
-    .header{
-     
+.header{  
 grid-area: header;
 background-color: white;
 height: 40px;
@@ -30,6 +29,13 @@ padding: 5px;
 }
 body{
 background-color: rgb(242, 241, 241);
+}
+.friend2{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    margin-top: 10px;
 }
 .vkl{
 margin-top: 5px;

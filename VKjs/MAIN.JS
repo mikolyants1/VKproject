@@ -1,6 +1,122 @@
-let fas=document.querySelector('.fas')
-let sp1=document.querySelector('.sp1')
-let fot=document.querySelector('#footer')
+const sidebar=document.querySelector('.sidebar')
+const sides=[
+  {ref:'../VKproject/MAIN.HTML',text:'Моя Страница'},
+  {ref:'../VKproject/NEWS.HTML',text:'Новости'},
+  {ref:'../VKproject/MES0.HTML',text:'Мессенджер'},
+  {ref:'',text:'Звонки'},
+  {ref:'../VKproject/FRIEND.HTML',text:'Друзья'},
+  {ref:'',text:'Сообщества'},
+  {ref:'',text:'Фотографии'},
+  {ref:'',text:'Музыка'},
+  {ref:'',text:'Видео'},
+  {ref:'',text:'Клипы'},
+  {ref:'',text:'Игры'},
+  {ref:'',text:'Стикеры'},
+  {ref:'',text:'Маркет'},
+]
+sides.reverse().forEach(({ref,text})=>{
+  const div=document.createElement('div')
+  const link=document.createElement('a')
+  div.classList.add('sb1')
+  link.classList.add('sb01')
+  link.href=ref
+  link.innerHTML=text
+  div.append(link)
+  sidebar.prepend(div)
+})
+const blog1=['Блог','Разработчикам']
+const blog2=['Для бизнеса','Еще']
+const rend=(arr)=>{
+  const div=document.createElement('div')
+  div.classList.add('blog')
+  arr.forEach(item=>{
+    const div1=document.createElement('div')
+    const link=document.createElement('a')
+    link.classList.add('bl1')
+    link.innerHTML=item
+    div1.append(link)
+    div.append(div1)
+    sidebar.append(div)
+  })
+}
+rend(blog1)
+rend(blog2)
+const fr13=document.querySelectorAll('.fr13')
+const src=['img/vki1.jpg','img/lam1.jpg ','img/vki3.jpg']
+src.forEach(item=>{
+    fr13[1].innerHTML+=`
+      <div>
+        <img class="fr14" src="${item}" alt="">
+      </div>   
+    `
+})
+const friend1=document.querySelector('.friend1')
+const friend2=document.querySelector('.friend2')
+const arr=[
+    {src:'./img/av5.jpg',name:'Иван'},
+    {src:'img/ava2.jpg',name:'Сергей'},
+    {src:'https://randomuser.me/api/portraits/men/1.jpg',name:'Антон'},
+    {src:'img/lam1.jpg',name:'Михаил'}
+]
+const arr1=[
+    {src:'img/vki2.webp',name:'Илья'},
+    {src:'img/vki3.jpg',name:'Никита'},
+    {src:'img/ava2.jpg',name:'Валерия'}
+]
+function Render(arr,div){
+arr.forEach(({name,src})=>{
+ const div1=document.createElement('div')
+ const img=document.createElement('img')
+ div1.style.cssText=`font-size: 15px;text-align: center;`
+ img.classList.add('friend11')
+ const div2=div1.cloneNode(true)
+ const div3=div1.cloneNode(true)
+ img.src=src
+ div3.textContent=name
+ div2.appendChild(img)
+ div1.append(div2)
+ div1.append(div3)
+ div.append(div1)
+})
+}
+Render(arr,friend1)
+Render(arr1,friend2)
+class Sub {
+  static elem=document.querySelector('.side3')
+   constructor(src,name,m1,m2){
+     this.src=src,
+     this.name=name,
+     this.m1=m1,
+     this.m2=m2
+   }
+   create(){
+     const div=document.createElement('div')
+     const img=document.createElement('img')
+     const link=document.createElement('a')
+     img.classList.add('group')
+     link.classList.add('sb01')
+     const div2=div.cloneNode(true)
+     const div3=div.cloneNode(true)
+     div3.style.margin=this.m2
+     img.src=this.src
+     link.innerHTML=this.name
+     div.style.cssText=`display: flex;margin-top:${this.m1};`
+     div2.appendChild(img)
+     div3.appendChild(link)
+     div.append(div2)
+     div.append(div3)
+     Sub.elem.append(div)
+   }
+}
+const sub=[
+new Sub('img/icon1.jpg','Студенческая жизнь Юридического института Рут','10px','5px 0 0 10px'),
+new Sub('img/icon2.jpg','Авито','20px','10px 0 0 5px'),
+new Sub('img/thor1.jpg','North Legends','20px','10px 0 0 5px'),
+]
+sub.forEach(item=>item.create())
+const fas=document.querySelector('.fas')
+const sp1=document.querySelector('.sp1')
+const fot=document.querySelector('#footer')
 fas.addEventListener('click',name2)
 function name2() {
 if (fas.hasAttribute('value')) {
@@ -16,21 +132,15 @@ sp1.style.color='red'
 fas.setAttribute('value','q')
 }
 }
-let side=document.querySelector('.side1')
-let div2=document.querySelector('.aaa')
-let div3=document.querySelector('.div3')
-let div4=document.querySelector('.div4')
-let div5=document.querySelector('.div5')
+const side=document.querySelector('.side1')
+const div2=document.querySelector('.aaa')
+const div3=document.querySelector('.div3')
+const div4=document.querySelector('.div4')
+const div5=document.querySelector('.div5')
 div4.addEventListener('click',()=>{
-let fot1=fot.style.marginBottom
-console.log(fot1)
-
-let width=div5.style.width
-console.log(width)
 if (div5.hasAttribute('id')) {
 div5.style.display='none'
 fot.style.marginBottom=`${-300}px`
-
 div5.removeAttribute('id')
 }else{
 div5.style.display='block'

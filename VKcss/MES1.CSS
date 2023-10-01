@@ -14,17 +14,26 @@ margin-top: 210px;
 display: none;
 }
 .div3{
-    position: center;
+position: center;
 width: 500px;
-height: 740px;background-color: white;padding:
-    5px;border-radius: 15px;margin-top: 0px;padding: 5px;margin: auto;
+height: 740px;
+background-color: white;
+padding:5px;
+border-radius: 15px;
+margin-top: 0px;
+padding: 5px;
+margin: auto;
+}
+#search{
+width: 96%;
+height: 80px;
+margin: auto;
+margin-top: 10px;
 }
 .side0{
-    display: flex;width: 94%;
+display: flex;width: 94%;
 }
-
-    .header{
-      
+ .header{    
 grid-area: header;
 background-color: white;
 height: 40px;

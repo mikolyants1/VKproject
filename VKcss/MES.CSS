@@ -10,9 +10,13 @@ background-color: white;
 margin-top: 210px;
 display: none;
 }
-
-    .header{
-      
+#search{
+    width: 96%;
+    height: 80px;
+    margin: auto;
+    margin-top: 10px;
+}
+ .header{   
 grid-area: header;
 background-color: white;
 height: 40px;

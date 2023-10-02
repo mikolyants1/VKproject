@@ -25,6 +25,32 @@ side.reverse().forEach(({ref,text})=>{
   div.append(link)
   sidebar.prepend(div)
 })
+class Footer {
+  static block=document.getElementById('footer')
+  constructor(grid,src,name){
+    this.src=src,
+    this.grid=grid,
+    this.name=name
+  }
+  render(){
+    const div=document.createElement('div')
+    const link=document.createElement('a')
+    link.classList.add('foot1')
+    div.style.gridColumn=this.grid
+    link.href=this.src
+    link.innerHTML=this.name
+    div.append(link)
+    Footer.block.append(div)
+  }
+}
+const elems=[
+    new Footer('2/2','../VKproject/MAIN.HTML','Главная'),
+    new Footer('3/3','',"Сервисы"),
+    new Footer('4/4','../VKproject/MES0.HTML','Мессенджер'),
+    new Footer('5/5','','Клипы'),
+    new Footer('6/6','','Видео'),
+]
+elems.forEach(item=>item.render())
 const blog1=['Блог','Разработчикам']
 const blog2=['Для бизнеса','Еще']
 const rend=(arr)=>{
@@ -85,7 +111,7 @@ class Friends {
     Friends.elem.append(div1)
   }
 }
-const names=[
+const friends=[
   new Friends('img/ava2.jpg','Валерия Тугушова','../VKproject/MES5.HTML'),
   new Friends('./img/av5.jpg','Иван Франов','../VKproject/MES4.HTML'),
   new Friends('img/valer.webp','Валера Кролов','../VKproject/MES3.HTML'),
@@ -95,7 +121,7 @@ const names=[
   new Friends('img/vki3.jpg','Никита Фролов',''),
   new Friends('img/vki2.webp','Илья Смирнов',''),
 ]
-names.forEach(item=>item.create())
+friends.forEach(item=>item.create())
 
 class Maybe {
  static elem=document.querySelector('.fri01')

@@ -24,6 +24,32 @@ const side=[
     div.append(link)
     sidebar.prepend(div)
   })
+  class Footer {
+    static block=document.getElementById('footer')
+    constructor(grid,src,name){
+      this.src=src,
+      this.grid=grid,
+      this.name=name
+    }
+    render(){
+      const div=document.createElement('div')
+      const link=document.createElement('a')
+      link.classList.add('foot1')
+      div.style.gridColumn=this.grid
+      link.href=this.src
+      link.innerHTML=this.name
+      div.append(link)
+      Footer.block.append(div)
+    }
+  }
+  const elems=[
+      new Footer('2/2','../VKproject/MAIN.HTML','Главная'),
+      new Footer('3/3','',"Сервисы"),
+      new Footer('4/4','../VKproject/MES0.HTML','Мессенджер'),
+      new Footer('5/5','','Клипы'),
+      new Footer('6/6','','Видео'),
+  ]
+  elems.forEach(item=>item.render())
 if (window.location.pathname=='/VKproject/MES0.HTML'){
 class Mess {
     static elem=document.querySelector('.div3')

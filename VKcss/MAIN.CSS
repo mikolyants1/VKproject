@@ -17,6 +17,12 @@ display: none;
 .c1{
 display: flex;
 }
+.imCom{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    border:1px solid black
+}
 .header{  
 grid-area: header;
 background-color: white;

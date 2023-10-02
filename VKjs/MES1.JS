@@ -41,6 +41,32 @@ const rend=(arr)=>{
 }
 rend(blog1)
 rend(blog2)
+class Footer {
+    static block=document.getElementById('footer')
+    constructor(grid,src,name){
+      this.src=src,
+      this.grid=grid,
+      this.name=name
+    }
+    render(){
+      const div=document.createElement('div')
+      const link=document.createElement('a')
+      link.classList.add('foot1')
+      div.style.gridColumn=this.grid
+      link.href=this.src
+      link.innerHTML=this.name
+      div.append(link)
+      Footer.block.append(div)
+    }
+  }
+  const elems=[
+      new Footer('2/2','../VKproject/MAIN.HTML','Главная'),
+      new Footer('3/3','',"Сервисы"),
+      new Footer('4/4','../VKproject/MES0.HTML','Мессенджер'),
+      new Footer('5/5','','Клипы'),
+      new Footer('6/6','','Видео'),
+  ]
+  elems.forEach(item=>item.render())
 const Search=document.getElementById('search')
 const serDiv1=document.createElement('div')
 const serDiv2=document.createElement('div')
@@ -57,6 +83,7 @@ serDiv2.append(serImg)
 serDiv1.append(serInput)
 serDiv1.append(serDiv2)
 Search.append(serDiv1)
+
 function DataBase9(name) {
     this.dbName= name
     this.ucdbName='websql8'

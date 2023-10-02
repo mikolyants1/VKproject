@@ -1,3 +1,30 @@
+
+class Footer {
+  static block=document.getElementById('footer')
+  constructor(grid,src,name){
+    this.src=src,
+    this.grid=grid,
+    this.name=name
+  }
+  render(){
+    const div=document.createElement('div')
+    const link=document.createElement('a')
+    link.classList.add('foot1')
+    div.style.gridColumn=this.grid
+    link.href=this.src
+    link.innerHTML=this.name
+    div.append(link)
+    Footer.block.append(div)
+  }
+}
+const elems=[
+    new Footer('2/2','../VKproject/MAIN.HTML','Главная'),
+    new Footer('3/3','',"Сервисы"),
+    new Footer('4/4','../VKproject/MES0.HTML','Мессенджер'),
+    new Footer('5/5','','Клипы'),
+    new Footer('6/6','','Видео'),
+]
+elems.forEach(item=>item.render())
 const sidebar=document.querySelector('.sidebar')
 const sides=[
   {ref:'../VKproject/MAIN.HTML',text:'Моя Страница'},
@@ -114,6 +141,29 @@ new Sub('img/icon2.jpg','Авито','20px','10px 0 0 5px'),
 new Sub('img/thor1.jpg','North Legends','20px','10px 0 0 5px'),
 ]
 sub.forEach(item=>item.create())
+const com=document.querySelector('.comment1')
+const urls=['img/com1.png','img/per1.png']
+urls.forEach(item=>{
+  const div=document.createElement('div')
+  const img=document.createElement('img')
+  const span=document.createElement('span')
+  div.classList.add('div4')
+  span.style.cssText=`display: inline-block;margin-top: 10px;`
+  img.style.cssText=`width: 25px;height: 20px;`
+  img.src=item
+  span.append(img)
+  div.append(span)
+  com.append(div)
+})
+const a1=document.querySelector('.a1')
+const tags=['Фото','Музыка','Клипы','Статьи','NFT']
+tags.forEach(item=>{
+    a1.innerHTML+=`
+    <div class='a11'>
+      ${item}
+    </div>
+    `
+})
 const fas=document.querySelector('.fas')
 const sp1=document.querySelector('.sp1')
 const fot=document.querySelector('#footer')
